@@ -1,17 +1,25 @@
 fun main() {
-    fun part1(input: List<String>): Int {
-        return input.size
+    fun maxOfSums(input: List<String>): Int {
+        var max = 0
+        var sum = 0
+        input.forEach { it ->
+            if (it.isNotBlank()) {
+                sum += it.toInt()
+            } else {
+                if (sum > max) {
+                    max = sum
+                }
+                sum = 0
+            }
+        }
+        return max;
     }
 
-    fun part2(input: List<String>): Int {
-        return input.size
-    }
 
     // test if implementation meets criteria from the description, like:
     val testInput = readInput("Day01_test")
-    check(part1(testInput) == 1)
+    check(maxOfSums(testInput) == 24000)
 
     val input = readInput("Day01")
-    println(part1(input))
-    println(part2(input))
+    println(maxOfSums(input))
 }
