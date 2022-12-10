@@ -86,6 +86,7 @@ fun main() {
     // test if implementation meets criteria from the description, like:
     val testInput = readInput("Day05_test")
     check(part1(testInput) == "[C, M, Z]")
+    check(part2(testInput) == "[M, C, D]")
     println(part1(testInput))
     println(part2(testInput))
 
