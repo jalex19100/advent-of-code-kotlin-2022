@@ -4,6 +4,8 @@ Welcome to the Advent of Code[^aoc] Kotlin project created by [jalex19100][githu
 
 In this repository, jalex19100 is about to provide solutions for the puzzles using [Kotlin][kotlin] language.
 
+Advent of Code 2022 Calendar and Puzzles - https://adventofcode.com/2022
+
 If you're stuck with Kotlin-specific questions or anything related to this template, check out the following resources:
 
 - [Kotlin docs][docs]
